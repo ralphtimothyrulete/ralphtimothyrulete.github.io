@@ -1,0 +1,509 @@
+*{
+       padding:0;
+       margin:0;
+}
+::-webkit-scrollbar-track {
+       background: #0e1111;
+     }
+
+
+html {
+       scroll-behavior: smooth;
+}
+
+body
+ {
+       overflow-x: hidden;
+       background:#f0f0f0;
+}
+
+.landing{
+       height:100vh;
+       display: block;
+}
+
+/* NAVBAR CSS */
+#navbar ul{
+       position: fixed;
+       list-style-type: none;
+       margin: 0;
+       height:50px;
+       background-color:#0e1111;
+       width:100%;
+       display:inline;
+       float:left;
+}
+
+.right, .left{
+       height:100%;
+
+}
+
+.right {
+       float:right;
+       margin-right: 5vw;
+       font-family: 'Roboto Condensed', sans-serif;
+}
+
+.right li a {
+       color: #F5F5F5;
+}
+
+.left {
+       float: left;
+       margin-left: 5vw;
+       font-size: 20px;
+       font-family: 'Roboto', sans-serif;
+}
+
+.left a {
+       color:#00DDFF;
+}
+
+
+#navbar li {
+       height:100%;
+       width: 90px;
+       display: inline-flex;
+       justify-content: center;
+       align-items: center;
+       transition: background-color 0.4s ease-in-out;
+}
+
+#navbar li a {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-decoration: none;
+
+       float: left;
+       transition: color 0.5s ease-in-out;
+
+}
+
+#navbar .right li:hover {
+       background-color: #f0f0f0;
+}
+
+#navbar .right li:hover a {
+       color:#0e1111;
+}
+
+/*Landing*/
+.caption {
+       height:100%;
+       width:100%;
+       background-image: url("land.jpg");
+       background-size: cover;
+       background-position-y:bottom;
+       background-attachment: fixed;
+       color:#f0f0f0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+
+.ctext {
+       text-align: center;
+}
+
+.ctext h1 {
+       font-family: 'Be Vietnam Pro', sans-serif;
+       font-size: 60px;
+       margin:35px 0 ;
+}
+
+.ctext h2, .ctext h3{
+       font-family: 'Cabin', sans-serif;
+       margin:10px;
+}
+
+.ctext h2 {
+       font-size:25px;
+}
+
+.ctext h3 {
+       font-size:20px;
+       margin-bottom: 40px;
+}
+
+.ctext a {
+       border:solid 2px #f0f0f0;
+       padding:10px;
+       font-family: 'Raleway', sans-serif;
+       color:#f0f0f0;
+       text-decoration: none;
+       transition: background-color 0.5s ease-in-out;
+}
+
+.ctext a:hover {
+       background:#f0f0f0;
+       color:#0e1111;
+}
+
+/* Info */
+
+.second {
+       height:75vh;
+       margin-top:5%;
+       width:100%;
+       display: inline-block;
+}
+
+
+.scenter {
+       height: 100%;
+       width:80%;
+       margin:0 10%;
+}
+
+.sleft, .sright{
+       width: 50%;
+       height:100%;
+}
+
+.sleft{
+       float:left;
+}
+
+.sright {
+       float:right;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+}
+
+.second img {
+       width:60%;
+       float: right;
+       margin-top:4%;
+}
+
+.scon{
+     margin-right:20%;
+     height:60%;
+}
+
+.scon h2 {
+       font-family: 'Roboto Condensed', sans-serif;
+       font-size:70px;
+}
+
+.sp {
+       font-family: 'Raleway', sans-serif;
+       font-size:17px;
+       margin-top:50px;
+       line-height: 25px;
+}
+
+.infos {
+       margin:20px 0;
+       width : 100%;
+}
+
+.infox {
+       display: inline-flex;
+}
+
+.s1, .s2, .s3 {
+       font-family: 'Raleway', sans-serif;
+       width:120px;
+}
+
+/*Family*/
+.family {
+       margin-top:5%;
+       padding:0 10%;
+       width:100%;
+       height:45vh;
+       display:inline-flex;
+}
+
+.fcap, .fimage {
+       width:40%;
+}
+
+.fimage {
+       float:left;
+       margin-left:2%;
+}
+
+.fcap {
+       text-align: right;
+       margin-left:-2%;
+       float: right;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+
+.fcap h2 {
+       font-family: 'Roboto Condensed', sans-serif;
+       font-size:70px;
+       height:50%;
+       margin-top:-7%;
+       margin-bottom: 5%;
+}
+.fimage img{
+       width:100%;
+}
+
+.finfos {
+       width:100%;
+       float:right;
+}
+
+.finfox {
+       display: inline-flex;
+       width:100%;
+       text-align: right;
+}
+
+.ff {
+       width:70%;
+       float:right;
+}
+.f1, .f2, .f3 {
+       margin:0;
+       width:150px;
+       text-align: right;
+       font-family: 'Raleway', sans-serif;
+}
+
+.f3{
+       width:50%;
+}
+
+/* Hobbies */
+.hobbies {
+       background-color: #0e1111;;
+       height: 55vh;
+       padding-top:5%;
+       margin-top:5%;
+       color:#F5F5F5;
+}
+
+.hobbies h2, .hobbies p {
+       text-align: center;
+}
+
+.hobbies h2 {
+       font-family: 'Roboto Condensed', sans-serif;
+       font-size:70px;
+}
+
+.hobbies p {
+       font-family: 'Raleway', sans-serif;
+       margin-top:10px;
+}
+
+.hlist {
+       width:100%;
+       margin-top:35px;
+       justify-content: center;
+       display:inline-flex;
+}
+
+.hcon {
+       width:13%;
+       display: block;
+       height:20vh;
+       margin: 10px;
+       background-color: #2D2E2D;
+       border-radius: 8px;
+}
+
+.hcon img {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       padding:15px;
+}
+
+.hcon p {
+       color: #f0f0f0;
+       width:90%;
+       margin-left:5%;
+       font-size: 15px;
+}
+
+.hcon h2 {
+       color:#00DDFF;
+       font-size:20px;
+}
+
+/*Skills*/
+.skills {
+       background-color: #0e1111;;
+       height: 45vh;
+       margin-bottom: 30vh;
+       padding-top:2.5%;
+       color:#F5F5F5;
+}
+
+.skills h2, .skills p {
+       text-align: center;
+}
+
+.skills h2 {
+       font-family: 'Roboto Condensed', sans-serif;
+       font-size:70px;
+}
+
+.skills p {
+       font-family: 'Raleway', sans-serif;
+       margin-top:10px;
+}
+
+.slist {
+       width:100%;
+       margin-top:35px;
+       justify-content: center;
+       display:inline-flex;
+}
+
+
+.skcon {
+       width:12%;
+       display: block;
+       height:35vh;
+       margin: 15px;
+       margin-top:10vh;
+       background-color: #2D2E2D;
+       border-radius: 8px;
+}
+
+#skcon2 {
+       margin-top:4vh;
+}
+
+.skcon img {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       padding:15px;
+       margin-top:10px;
+}
+
+.skcon p {
+       color: #f0f0f0;
+       width:80%;
+       margin-left:10%;
+       font-size: 15px;
+       line-height: 30px;
+}
+
+.skcon h2{
+       font-size:20px;
+}
+
+/* Strength */
+.weakness {
+       padding:20px;
+       width:70vw;
+       margin-left:15vw;
+       display:inline-flex;
+       background-color: #FAFAFA;
+       border-radius: 10px;
+}
+
+.wimg, .wcap {
+       width:50%;
+}
+
+
+.wcap {
+       margin: auto;
+       top:0;
+       transform: translateY(0%);
+
+}
+
+.wcap h2{
+       font-family: 'Roboto Condensed', sans-serif;
+       font-size:50px;
+       text-align: right;
+       line-height: 75px;
+}
+
+.wp {
+       text-align: right;
+       line-height: 25px;
+       font-family: 'Raleway', sans-serif;
+       width:60%;
+       padding-left:40%;
+}
+
+.line{
+       width:100%;
+       text-align: right;
+       margin:20px 0;
+}
+
+
+.wimg img{
+       width:80%;
+       display:block;
+       margin-left: 50px;
+       border-radius: 15px;
+}
+
+.career {
+       margin:15vh 0;
+       width:70vw;
+       margin-left: 15vw;
+       display:inline-flex;
+}
+
+.carimg {
+       width:50%;
+}
+
+.carcap {
+       width:50%;
+       height:70%;
+       padding:2.5%;
+       background-color:#FAFAFA;
+       border-radius: 15px;
+       margin: auto;
+       border-top-left-radius: 0%;
+       border-bottom-left-radius: 0%;
+}
+
+.carcap h2 {
+       font-family: 'Roboto Condensed', sans-serif;
+       font-size:50px;
+       text-align: left;
+       line-height: 75px;
+       padding-left:5%;
+}
+
+.carcap p {
+
+       width:80%;
+       padding-left:5%;
+       font-size: 20 px;
+       font-family: 'Raleway', sans-serif;
+       line-height: 30px;
+
+}
+
+.carimg img {
+       width:80%;
+       float:right;
+       border-radius: 15px;
+}
+
+.footer {
+       height:10vh;
+       background-color: #0e1111;
+       color: #f0f0f0;
+       text-align: center;
+       font-family: 'Cabin', sans-serif;
+}
+
+.footer p {
+       top:0;
+       transform: translateY(175%);
+}
